@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./education.html">Education</a>
+        <a href="./work.html">Work Experience</a>
+        <a href="./contact.html">Contact Me</a>
+      </nav>
+    </header>
+    <section class="section-parent">
+      <section class="contactme">
+        <h1 style="font-size: 4rem">CONTACT ME</h1>
+      </section>
+      <section>
+        <form action="">
+          <label style="margin-top: 2rem">
+            Your Firstname <br />
+            <input
+              type="text"
+              name="Firstname"
+              id="Firstname"
+              placeholder="Enter name ...."
+              pattern="[A-Za-z]+"
+              maxlength="40"
+              required
+            />
+          </label>
+          <label>
+            Your E-mail <br />
+            <input
+              type="email"
+              name="Email"
+              id="Email"
+              placeholder="sample@hotmail.com"
+              required
+            />
+          </label>
+          <label class="gender"
+            >Gender <br />
+            <select class="select" name="gender" id="gender">
+              <option disabled selected>Select....</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+          <label
+            >Message <br />
+            <textarea name="Message" id="Message" style="overflow: scroll">
+            </textarea>
+          </label>
+          <div style="transition: 0.3s">
+            <button onclick="showCustomAlert()" type="submit">Send</button>
+            <button type="reset">Clear</button>
+          </div>
+        </form>
+      </section>
+    </section>
+  </body>
+</html>
