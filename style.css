@@ -129,6 +129,9 @@ nav a:hover {
   display: flex;
   align-items: center;
 }
+.child-3 img {
+  margin-left: 1rem;
+}
 /* ccs education */
 
 table {
@@ -196,7 +199,7 @@ td:hover {
 form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border: 2px solid black;
   border-radius: 10px;
@@ -224,7 +227,6 @@ input {
   font-size: 1.5rem;
   padding: 1rem;
   border-radius: 10px;
-  text-align: center;
   margin: 1rem 0;
 }
 #Message {
